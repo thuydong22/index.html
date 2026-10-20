@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6dce9">
+<title>for my favorite person ♡</title>
+<style>
+:root{--pink:#f5c7dc;--hot:#df75a5;--silver:#dce0e8;--ink:#514654;--cream:#fff9fc;--lilac:#d9d2ef}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font-family:ui-rounded,"Trebuchet MS",system-ui,sans-serif;background:radial-gradient(circle at 10% 5%,#fff 0 4%,transparent 23%),linear-gradient(135deg,#fbe8f1,#e9e8f3 52%,#f7dce8);min-height:100vh;padding:22px 12px 40px}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:13px 13px}
+.wrap{position:relative;max-width:720px;margin:auto}
+.topline{display:flex;justify-content:space-between;gap:8px;align-items:center;margin:0 4px 12px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#986f89}
+.window{background:rgba(255,250,253,.88);border:1px solid #fff;border-radius:22px;box-shadow:0 18px 50px #8b658522,inset 0 0 0 1px #e8dce7;overflow:hidden}
+.titlebar{display:flex;align-items:center;gap:7px;padding:12px 15px;background:linear-gradient(90deg,#e6e8f0,#f9d8e7,#e8e4f4);border-bottom:1px solid #fff}
+.dot{width:10px;height:10px;border-radius:50%;background:#e98fb5;border:1px solid #fff8;box-shadow:0 1px 2px #8b658522}
+.titlebar span{font-size:11px;letter-spacing:1px;margin-left:5px;color:#7b6277}
+.content{padding:clamp(18px,5vw,36px)}
+.sticker{display:inline-block;background:#fff;border:1px solid #ead5e2;box-shadow:3px 3px 0 #d8c8db;border-radius:8px;padding:6px 10px;font-size:11px;transform:rotate(-2deg);color:#a35d84}
+h1{font-size:clamp(32px,8vw,58px);line-height:1.02;letter-spacing:-2px;margin:18px 0 8px;color:#bc628f}
+h1 em{font-style:normal;color:#8c83b9}
+.sub{font-size:14px;line-height:1.7;color:#8b7588;max-width:470px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:center;margin-top:22px}
+.player-art{min-height:230px;border-radius:18px;border:1px solid #fff;background:linear-gradient(145deg,#f8dce9,#dfe1ef 58%,#fff5fa);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:inset 0 0 0 1px #e8dce7}
+.cd{width:150px;height:150px;border-radius:50%;background:repeating-radial-gradient(circle,#e9eaf0 0 5px,#d1d5df 6px 8px,#f6d9e7 9px 13px);border:5px solid #ffffffaa;box-shadow:0 10px 24px #92718b33;display:grid;place-items:center;animation:spin 18s linear infinite}
+.cd:after{content:"♡";width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#f8c9df,#fff);display:grid;place-items:center;color:#c96999;font-size:25px;border:2px solid white}
+@keyframes spin{to{transform:rotate(360deg)}}
+.tiny-note{position:absolute;background:#fffdfd;border:1px solid #ead7e4;padding:8px 10px;border-radius:8px;font-size:11px;box-shadow:2px 3px 0 #d8c8db}
+.note1{top:15px;left:12px;transform:rotate(-7deg)}.note2{right:10px;bottom:16px;transform:rotate(5deg)}
+.card{background:#fffdfd;border:1px solid #f0dce7;border-radius:16px;padding:18px;margin-top:17px;box-shadow:0 5px 0 #eadce8}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+h2{font-size:18px;margin:0;color:#a65e88}
+.tag{font-size:10px;letter-spacing:1px;background:#f8e8f0;padding:6px 8px;border-radius:999px;color:#a16b8b}
+.letter{font-size:14px;line-height:1.9;white-space:pre-line}
+.sign{margin-top:14px;text-align:right;color:#b45d8c;font-style:italic}
+.songbox{background:linear-gradient(135deg,#f8e5ef,#eef0f7);border-radius:13px;padding:12px}
+.songrow{display:flex;align-items:center;gap:11px}
+.songicon{width:44px;height:44px;flex:0 0 44px;border-radius:11px;background:linear-gradient(145deg,#e6dff1,#f2bad5);display:grid;place-items:center;font-size:21px;border:1px solid white}
+.songtitle{font-weight:700;font-size:13px}.songhint{font-size:11px;color:#927b91;margin-top:4px}
+.embed{margin-top:12px;overflow:hidden;border-radius:12px;background:#f1e8ef;min-height:100px}
+.embed iframe{display:block;width:100%;height:152px;border:0}
+.embed-placeholder{padding:16px;font-size:12px;line-height:1.7;color:#8b7588}
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.photo{aspect-ratio:3/4;border-radius:12px;border:1px solid #fff;background:linear-gradient(145deg,#f4d7e6,#e2e4f0);overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;color:#9c7c94;font-size:11px}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo .placeholder{padding:8px;line-height:1.5}
+.footer{text-align:center;font-size:11px;line-height:1.8;color:#987f94;padding:20px 10px 4px}
+.heart{display:inline-block;animation:pulse 1.5s ease-in-out infinite}@keyframes pulse{50%{transform:scale(1.2)}}
+.small{font-size:11px;color:#a28b9d}
+@media(max-width:540px){body{padding:12px 8px 28px}.hero-grid{grid-template-columns:1fr}.player-art{min-height:205px}.cd{width:135px;height:135px}.content{padding:18px}.photos{gap:6px}.topline{font-size:9px;letter-spacing:1px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topline"><span>♡ tiny love archive</span><span>made with love · 2000s edition</span></div>
+  <main class="window">
+    <div class="titlebar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span>my_favorite_person.exe</span></div>
+    <div class="content">
+      <span class="sticker">a little corner just for you ✧</span>
+      <h1>for my<br><em>favorite person</em> ♡</h1>
+      <div class="sub">Một góc nhỏ trên internet, dành riêng cho cậu. Mở nhạc lên, đọc vài dòng, và nhớ rằng có người luôn mong cậu bình yên.</div>
+      <div class="hero-grid">
+        <div class="player-art" aria-label="Minh họa đĩa CD">
+          <span class="tiny-note note1">SIDE A: us ♡</span><div class="cd"></div><span class="tiny-note note2">you + me = ✧</span>
+        </div>
+        <div>
+          <span class="tag">A LITTLE REMINDER</span>
+          <p style="font-size:16px;line-height:1.8;margin:14px 0 8px">Cậu không cần phải làm điều gì thật lớn lao để được yêu thương.</p>
+          <p class="small">Chỉ cần là cậu thôi, đã rất đáng quý rồi.</p>
+        </div>
+      </div>
+
+      <section class="card">
+        <div class="section-head"><h2>💌 a letter for you</h2><span class="tag">OPEN ME</span></div>
+        <div class="letter" id="letter">Chúc mừng sinh nhật em bé của tui ♡
+
+Tui mong tuổi mới của cậu có thật nhiều ngày vui, ngủ ngon hơn, bớt mệt lòng và luôn có những điều nhỏ xíu khiến cậu mỉm cười.
+
+Cảm ơn cậu vì đã xuất hiện trong cuộc sống của tui. Tui không giỏi nói những lời thật hoa mỹ, nhưng tui muốn cậu biết rằng tui luôn trân trọng cậu, cả những lúc cậu vui vẻ lẫn những ngày cậu chẳng ổn chút nào.
+
+Khi nào mệt thì cứ nghỉ ngơi nha. Không cần lúc nào cũng phải mạnh mẽ đâu. Mong chiếc playlist nhỏ này có thể ở bên cậu trong những lúc tui chưa thể ở cạnh.
+
+Thương cậu nhiều nhiều. Chúc cậu luôn được yêu thương, không chỉ hôm nay mà cả những ngày bình thường nữa. ♡</div>
+        <div class="sign">— người thương của cậu ♡</div>
+      </section>
+
+      <section class="card">
+        <div class="section-head"><h2>🎧 our little playlist</h2><span class="tag">SIDE B</span></div>
+        <div class="songbox">
+          <div class="songrow"><div class="songicon">♫</div><div><div class="songtitle">songs that remind me of you</div><div class="songhint">Một vài giai điệu, rất nhiều điều muốn nói.</div></div></div>
+          <div class="embed" id="musicEmbed">
+            <div class="embed-placeholder">🎵 Playlist sẽ xuất hiện ở đây sau khi bà thêm link Spotify hoặc mã nhúng playlist trong phần hướng dẫn.</div>
+          </div>
+        </div>
+        <p class="small">* Nhạc từ Spotify/YouTube cần internet. Một số điện thoại hoặc trình duyệt có thể yêu cầu bấm nút phát trước.</p>
+      </section>
+
+      <section class="card">
+        <div class="section-head"><h2>📸 little memories</h2><span class="tag">OUR PHOTO DUMP</span></div>
+        <div class="photos">
+          <div class="photo"><div class="placeholder">♡<br>thêm ảnh<br>kỷ niệm 01</div></div>
+          <div class="photo"><div class="placeholder">✧<br>thêm ảnh<br>kỷ niệm 02</div></div>
+          <div class="photo"><div class="placeholder">☁<br>thêm ảnh<br>kỷ niệm 03</div></div>
+        </div>
+        <p class="small">Những khoảnh khắc nhỏ xíu nhưng tui muốn giữ lại thật lâu.</p>
+      </section>
+      <div class="footer">made for you, and only you <span class="heart">♡</span><br>if you are reading this, you are loved.</div>
+    </div>
+  </main>
+</div>
+<script>
+/* PERSONALIZE YOUR GIFT:
+   1) Change the letter text in the section with id="letter".
+   2) To add photos, replace each .photo placeholder with:
+      <img src="https://your-public-image-url.jpg" alt="Kỷ niệm của chúng mình">
+   3) To add Spotify: use the playlist's Share > Embed playlist, then paste the iframe
+      inside the div id="musicEmbed". For YouTube, use Share > Embed on a playlist
+      and paste its iframe instead. */
+</script>
+</body>
+</html>
